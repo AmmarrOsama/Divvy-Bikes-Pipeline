@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: analytics
+    database: gen-lang-client-0895970601
+    schema: divvy_bikes
+    tables:
+      - name: bikes_managed
