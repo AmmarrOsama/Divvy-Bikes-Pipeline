@@ -227,7 +227,7 @@ setup_dbt_profile = BashOperator(
 
 clone_repo = BashOperator(
     task_id='clone_dbt_repo',
-    bash_command='rm -rf /tmp/divvy_bikes_project && git clone https://github.com/AmmarrOsama/Used-Cars-Pipeline.git /tmp/divvy_bikes_project',
+    bash_command='rm -rf /tmp/divvy_bikes_project && git clone https://github.com/AmmarrOsama/Divvy-Bikes-Pipeline.git /tmp/divvy_bikes_project',
     dag=dag
 )
 
