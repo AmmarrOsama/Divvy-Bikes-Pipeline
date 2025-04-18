@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: analytics
-    database: gen-lang-client-0895970601
-    schema: divvy_bikes
+    database: "{{ env_var('DAG_PROJECT_ID') }}"
+    schema: "{{ env_var('DAG_DATASET_NAME') }}"
     tables:
       - name: bikes_managed
